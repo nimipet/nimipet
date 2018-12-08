@@ -95,7 +95,7 @@ Route::get('/get-nimipet', function () {
 Route::post('/get-nimi-pub', function (Request $request) {
     $nimi_slug = $request->nimi_slug;
 
-    $nimipet = DB::table('nimipets')->where('nimi_slug', '=', $nimi_slug)->get();
+    $nimipet = DB::table('nimipets')->where('nimi_slug', '=', $nimi_slug)->where('user_id', '>', 0)->get();
     if (sizeof($nimipet) == 0) {
         return "first-login";
     }
