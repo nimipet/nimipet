@@ -15,7 +15,8 @@
 			</div>
 
 			<div class="col-md-8 col-sm-12 game-container">
-      <speech-bubble v-if="this.$store.state.nimi.nimi_mood != 'unborn' && this.$store.state.nimi.nimi_mood != 'dead'" />
+        <speech-bubble v-if="this.$store.state.nimi.nimi_mood != 'unborn' && this.$store.state.nimi.nimi_mood != 'dead' && this.$store.state.nimi.nimi_mood == 'peyote'" v-bind:class="'peyote-trip'" />
+        <speech-bubble v-else-if="this.$store.state.nimi.nimi_mood != 'unborn' && this.$store.state.nimi.nimi_mood != 'dead'" />
 
 				<nimipet :nimi="this.$store.state.nimi" v-if="this.$store.state.nimi.nimi_mood == 'peyote'" v-bind:class="'peyote-trip'" />
         <nimipet :nimi="this.$store.state.nimi" v-else />
