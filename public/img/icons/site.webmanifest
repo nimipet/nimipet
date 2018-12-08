@@ -1,0 +1,19 @@
+{
+    "name": "Nimipet",
+    "short_name": "Nimipet",
+    "icons": [
+        {
+            "src": "android-chrome-192x192.png?v=47Mm5rpKr8",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "android-chrome-512x512.png?v=47Mm5rpKr8",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#7b52b1",
+    "background_color": "#7b52b1",
+    "display": "standalone"
+}

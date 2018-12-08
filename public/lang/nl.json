@@ -1,0 +1,44 @@
+{
+
+    "home_header": "Een spel gedreven door browser mining met cryptocurrency beloningen.",
+    "create_account": "Maak een account en begin jou nimipet te groeien!",
+    "login": "Log in op jou account",
+    "sign_up": "Maak een nieuw account",
+    "pwd_recovery": "Wachtwoord Herstellen",
+    "forgot_pwd": "Voer Uw E-mail adres in en wij zullen je een link sturen om een nieuw wachtwoord te kiezen:",
+
+    "q_1_title": "Wat is Nimipet?",
+    "q_1": "<br>Nimipet is het spel waar nimipets leven.</br> <br>Een nimipet is een digitaal huisdier die gevoed moet worden met virtuele stukjes eten die de gebruiker maakt door Nimiq te minen in de browser.</br> <br>Nimipet moet minstens een stukje eten opeten elke 24 uur of al je punten en NIMs worden verloren.</br>  <br>Om een stukje eten te ontvangen, moet de speler 15 minuten lang minen. Het maximum aantal eten wat de nimipet kan eten per dag is 96 stukjes (24 uur / 15 min).</br> <br>Na elke voeding gaat de nieuwe 24-uur periode in. Als een nimipet in 24 uur niks te eten krijgt gaat de nimipet dood.</br> <br>Elke nimipet heeft een waarde in NIMs. Hoe meer eten hij ontvangen heeft, hoe groter en waardevoller hij is.</br>",
+    "q_2_title": "Hoe veel moet ik minen om een stukje eten te krijgen voor mijn nimipet?",
+    "q_2": "<br>Om je nimipet in leven te houden moet je minen voor 15 minuten om een stukje eten te ontvangen. Dan sleep je het stukje eten over je nimipet heen en je bent klaar voor vandaag.</br> <br>Als je wilt stijgen op de ranglijsten, kan je meer dan 15 minuten minen. Je kan maximaal 24 uur per dag minen. Minen kan je op verschillende apparaten doen.</br>",
+    "q_3_title": "Wat zijn de verschillende stages van je nimipet?",
+    "q_3": "<br>Ongeboren - Een nieuw account is gemaakt, de nimipet zit nog in het ei.</br> <br>Blij - De eerste 6 uur (0-6) na het voeden</br><br>Normaal - De 6 uur daarna (6-12)</br> <br>Bezorgd - De volgende 6 uur (12-18)</br> <br>Bang - De laatste 6 uur (18-24)</br> <br>Dood - De nimipet gaat dood na 24 uur niet gevoed te worden.</br>",
+    "q_4_title": "Kan ik nimipets kopen en verkopen?",
+    "q_4": "<br>Ja, nimipets kunnen verhandeld worden. Als je je nimipet niet meer leuk vind, kan je hem aan iemand anders verkopen, en diegene groeit hem dan verder. Of je kan je nimipet in laten slapen en je zult de nim-waarde zelf verdienen.</br> <br>Wanneer je nimipets verkoopt kan de prijs hoger zijn omdat je ook voor de nimipet hebt gezorgd.</br>",
+    "q_5_title": "Hoe kan mijn nimipet hoger op de ranglijsten komen?",
+    "q_5": "De positie van je nimipet ligt aan de hoeveelheid punten die je nimipet heeft. Nimipets krijgen punten voor hoeveel ze eten, hoeveel de gebruiker minet en andere factoren die later worden geimplementeerd.",
+    "q_6_title": "Kan ik met meer CPU-Threads minen?",
+    "q_6": "<br>Je nimipet minet standaard met 2 threads. Het is mogelijk om dit nummer te veranderen om meer te minen. Dit kan je doen door de schuifknop onder de mine-knop. </br> <br>DISCLAIMER: Wij zijn niet verantwoordelijk voor enige schade op uw apparaten tijdens het minen.</br> <br>Tot nu toe zijn er nog geen schadelijke gevallen geweest, maar er is een risico als je heel veel en heel lang minet.</br>  <br>Dit risico is niet alleen bij Nimiq maar bij alle cryptocurrency mining.</br>",
+    "q_7_title": "In welke versie is het Nimipet project?",
+    "q_7": "0.3.0 beta versie. Meer informatie op ons <a href='https://medium.com/@Nimipet/' target='_blank'>blog</a>.",
+    "q_8_title": "Waar gaan de NIMs van dode nimipets naartoe?",
+    "q_8": "50% van alle NIMs van dode nimipets gaan terug naar de community tijdens wekelijkse airdrops en de andere 50% gaan naar de Nimipet fund en worden gebruikt voor ontwikkeling, goede doelen en andere.",
+    "q_9_title": "Ik hou van Nimipet! Hoe kan ik jullie helpen?",
+    "q_9": "Wij zijn op zoek naar getalenteerde mensen die kunnen helpen van Nimipet de volgende CryptoKitties te maken. Neem contact met ons op via E-mail: ",
+
+    "box_1": "Tijd sinds laatste voeding",
+    "box_2": "Nimipet punten",
+    "box_2_bottom": "Stukjes voeding gevoerd + (NIMs gemined * 2)",
+    "box_3": "Nimipet waarde in NIMs",
+    "box_3_bottom": "Update interval: 1 uur",
+    "box_4": "Ranglijst positie",
+
+    "title": "Infomatie",
+    "text": "<br>Nimipet kan gevoerd worden door op 'Use' te drukken onder een voedings-stukje. Elke klik voedt de nimipet met 1 stukje.</br> <br>Alle gebruikers zullen 1 'Resurrection Item' ontvangen nadat de nimipet meer dan 30 dagen oud is.</br> <br>'Resurrection item' kan een dode nimipet opnieuw tot leven brengen, maar alleen voor de volgende airdrop. Na de airdrop, worden de dode nimipets waarde geredistubiteerd en zijn ze vooreeuwig weg.</br> <br>Gebruikers zullen alle items kunnen verkopen en kopen op de marktplaats. Meer items komen later.</br>",
+
+    "title": "Krijg meer Nim",
+    "text": "<br>Deel deze link met andere mensen en ze kunnen voor je minen, of jij kan minen met meerdere apparaten.</br>",
+
+    "sleep": "Laat inslapen"
+
+}

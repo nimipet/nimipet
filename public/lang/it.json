@@ -1,0 +1,44 @@
+{
+
+	    "home_header": "Gioco con ricompense in criptovalute basato su mining effettuato tramite browser",
+	    "create_account": "Crea un account e inizia a far crescere il tuo Nimipet",
+	    "login": " Accedi",
+	    "sign_up": " Crea un account",
+	    "pwd_recovery": "Recupera la password",
+	    "forgot_pwd": " Inserisci il tuo indirizzo email e ti invieremo un link con cui potrai scegliere una nuova password:",
+
+	    "q_1_title": " Cos’è Nimipet?",
+	    "q_1": "<br>Nimipet è un gioco che ti permette di allevare nimipets</br> <br>I nimipets sono animali virtuali che puoi far crescere dando loro da mangiare del cibo virtuale ottenibile minando nel browser la criptovaluta Nimiq.</br> <br>Il tuo nimipet deve mangiare almeno 1 volta ogni 24 ore, altrimenti morirà e tu perderai tutti i tuoi punti e i tuoi Nimiq accumulati</br>  <br>Per ottenere una razione di cibo, devi minare con il tuo browser per 15 minuti. Il nimipet può mangiare al massimo 96 razioni al giorno (24 ore / 15 min = 96).</br> <br>Dopo ogni pasto, il conteggio delle 24 ore si azzera e riparte. Se entro 24 ore il Nimipet non mangia almeno un’altra razione di cibo, muore.</br> <br>Ogni nimipet ha un valore espresso in Nimiq. Più un nimipet mangia, più alto sarà il suo valore.</br>",
+	    "q_2_title": " Quanto devo minare per ottenere cibo da dare al mio Nimipet? ",
+	    "q_2": "<br>Per tenere in vita il tuo nimipet, devi minare 15 minuti per ottenere una razione di cibo. Ottenuta la razione di cibo, trascinala e rilasciala sul nimipet. Così facendo gli avrai garantito altre 24 ore di vita.</br> <br>Se vuoi scalare la classifica, mina per più tempo di 15 minuti. Naturalmente puoi minare al massimo 24 ore al giorno. Puoi minare da diversi dispositivi. </br>",
+	    "q_3_title": " Quali sono i diversi stati di un nimipet?",
+	    "q_3": "<br>Nascituro – Viene creato un nuovo account, il nimipet è ancora nell’uovo</br> <br>Felice – Le prime 6 ore (0-6) dopo il pasto</br><br>OK – Le successive 6 ore (6-12)</br> <br>Preoccupato – Le seguenti 6 ore (12-18)</br> <br>Terrorizzato – Le ultime 6 ore (18-24)</br> <br>Morto – Il tuo Nimipet muore se non mangia per 24 ore</br>",
+	    "q_4_title": " I Nimipets si possono comprare e vendere?",
+	    "q_4": "<br>Certo, i nimipets possono essere sia comprati che venduti. Se ti sei stancato del tuo nimipet, puoi venderlo a qualcun altro che se ne prenderà cura continuando a farlo crescere. Alternativamente puoi decidere di mandare a dormire il tuo nimipet, ricevendo così nel tuo portafoglio tutti i Nimiq corrispondenti al suo valore.</br> <br>Quando un nimipet viene messo in vendita, il prezzo può essere più alto in conseguenza del valore aggiunto di essersene presi cura.</br>",
+	    "q_5_title": " Come può il mio nimipet scalare la classifica?",
+	    "q_5": "La posizione in classifica del tuo nimipet dipende dai punti che esso ha accumulato. I Nimipets ricevono punti in base alle razioni di cibo che mangiano, ma anche allo hash-rate con cui il suo proprietario mina, nonché ulteriori fattori che verranno implementati nei futuri aggiornamenti del gioco.",
+	    "q_6_title": " Posso aumentare i thread con cui mino?",
+	    "q_6": "<br>Di default i nimipets minano con 2 thread. Tuttavia è possible cambiare questo numero per aumentare il proprio hash-rate. Questo può essere fatto tramite il cursore che appare sotto il pulsante del mining. </br> <br>ATTENZIONE: Non forniamo suggerimenti sul livello di thread più opportuno e non siamo in alcun modo responsabili per eventuali danni diretti o indiretti che il tuo dispositivo avrà subito per aver minato su Nimipet.</br> <br>Ad oggi non ci è mai pervenuta notizia di danni conseguenti l’attività di mining su Nimipet o Nimiq.com, ma riteniamo che esista tale rischio nel caso in cui il giocatore lasci minare il proprio dispositivo per un considerevole lasso di tempo ininterrottamente e con un numero elevato di thread.</br>  <br>Tale rischio non è direttamente legato all’attività di mining di Nimiq, ma è generalmente legato al mining a prescindere dalla criptovaluta in questione.</br>",
+	    "q_7_title": " Qual è l’attuale versione di Nimipet?",
+	    "q_7": "versione beta 0.3.0. Per maggiori dettagli visitare <a href='https://medium.com/@Nimipet/' target='_blank'>blog</a>.",
+	    "q_8_title": " Che fine fanno i Nimiq di un nimipet morto?",
+	    "q_8": "Un 50% viene redistribuito nella community tramite airdrop settimanali e un altro 50% finisce in un fondo Nimipet usato per coprire costi di sviluppo o viene devoluto in beneficenza o altro.",
+	    "q_9_title": "Il progetto Nimipet mi affascina. Come posso contribuire?",
+	    "q_9": "Stiamo cercando persone di talento e appassionate che possano entrare a far parte del team Nimipet con l’obiettivo di rendere questo progetto il CryptoKitties del futuro. Contattaci via email: ",
+
+	    "box_1": "Tempo trascorso dall’ultimo pasto",
+	    "box_2": "Punti Nimipet",
+	    "box_2_bottom": "Razioni di cibo date + (Nimiq minati * 2)",
+	    "box_3": "Valore in Nimiq del tuo Nimipet",
+	    "box_3_bottom": "Intervallo per l’aggiornamento: 1 h.",
+	    "box_4": "Posizione in classifica",
+
+	    "title": "Info",
+	    "text": "<br>Dai da mangiare al tuo Nimipet cliccando 'Use' che trovi sotto il cibo. Ogni clic dà al Nimipet una razione di cibo.</br> <br>Ciascun giocatore riceverà 1 bonus Resurrezione al compimento dei 30 giorni di età del proprio Nimipet.</br> <br>Il bonus Resurrezione può far risorgere un nimipet morto, ma solo prima del successivo airdrop. Una volta avvenuto l’airdrop, i Nimiq corrispondenti al valore del nimipet morto sono redistribuiti e di conseguenza il giocatore non può più far risorgere il proprio nimipet né recuperarne il valore.</br> <br>I giocatori hanno la possibilità di acquistare e vendere anche tutti gli oggetti dell’inventario sul mercato. Ulteriori nuovi oggetti saranno aggiunti in futuro.</br>",
+
+	    "title": "Ottieni più NIM",
+	    "text": "<br>Condividi questo link con alter persone affinché possano aiutarti a minare Nimiq per il tuo Nimipet, oppure puoi minare tu stesso da più dispositivi.</br>",
+	
+	    "sleep": "Manda a dormire"
+	
+	}

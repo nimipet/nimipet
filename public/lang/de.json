@@ -1,0 +1,41 @@
+{
+  "home_header": "Browser-Mining basiertes Spiel mit Belohnungen in Kryptowährungen",
+  "create_account": "Erstelle einen Account und beginne damit dein Nimipet großzuziehen",
+  "login_text": "In deinen Account einloggen",
+  "sign_up": "Neuen Account erstellen",
+  "pwd_recovery": "Passwort Wiederherstellung",
+  "forgot_pwd": "Geben Sie Ihre E-Mail-Adresse ein und wir senden Ihnen einen Link, um ein neues Passwort zu wählen:",
+
+  "q_1_title": "Was ist Nimipet?",
+  "q_1": "Nimipet ist das Spiel in dem Nimipets leben.<br> <br>Ein Nimipet ist ein digitales Haustier, das mit virtuellen Nahrungsmitteln gefüttert werden muss, die der Benutzer durch Browser-Mining von <a href=\"https://nimiq.com\">Nimiq</a> herstellt.<br> <br>Ein Nimipet muss alle 24 Stunden mindestens ein mal gefüttert werden, sonst stirbt es und alle seine Punkte und NIMs gehen verloren.<br>  <br>Um Essen zu erhalten, muss der Spieler 15 Minuten minen. Die maximale Anzahl an Nimipet-Futter, die ein Nimipet pro Tag essen kann, beträgt 96 Stück (24 Stunden / 15 Minuten).<br> <br>Die neue 24-Stunden-Periode beginnt nach jedem füttern. Wenn ein Nimipet 24 Stunden lang nichts zu essen bekommt, stirbt es.<br> <br>Jedes Nimipet hat einen Wert in NIMs. Je mehr Nimipet-Futter es erhalten hat, desto wertvoller ist es.",
+  "q_2_title": "Wie viel muss ich minen, um Futter für mein Nimipet zu bekommen?",
+  "q_2": "Um Ihr Nimipet am Leben zu halten, müssen Sie 15 Minuten lang minen, um ein Stück Nimipet-Futter zu erhalten. Dann ziehen Sie es auf Ihr Nimipet und Ihre tägliche Arbeit ist erledigt.<br> <br>Wenn Sie in der Rangliste aufsteigen möchten, können Sie länger als 15 Minuten minen, aber maximal 24 Stunden am Tag. Es kann von verschiedenen Geräten aus gemined werden.",
+  "q_3_title": "Was sind die verschiednene zustände von Nimipets?",
+  "q_3": "Ungeboren - Ein neuer Account wurde erstellt, das Nimipet befindet sich noch im Ei<br> <br>Glücklich - Die ersten 6 Stunden (0-6) nach dem Füttern<br><br>Neutral - Die nächsten 6 Stunden (6-12)<br> <br>Besorgt - Die nächsten 6 Stunden (12-18)<br> <br>Verängstigt - Die letzten 6 Stunden (18-24)<br> <br>Tot - Ein Nimipet stirbt, wenn es für 24 Stunden nicht gefüttert wird",
+  "q_4_title": "Kann ich Nimipets kaufen oder Verkaufen?",
+  "q_4": "Ja, Nimipets können gehandelt werden. Wenn Sie Ihr Nimipet nicht mehr mögen, können Sie es an andere verkaufen und diese Person wird sich weiter darum kümmern. Oder Sie können Ihr Nimipet einschläfern und sich den NIM-Wert auszahlen lassen.<br> <br>Wenn Sie Nimipets an andere verkaufen, kann der Preis höher sein, da Sie sich auch um das Nimipet gekümmert haben.",
+  "q_5_title": "Wie kann mein Nimipet in der Rangliste aufsteigen?",
+  "q_5": "Die Position Ihres Nimipets auf der Rangliste hängt von der Anzahl seiner gesammelten Punkte ab. Nimipets erhalten Punkte, wenn sie gefüttert werden, durch die Hash-Leistung die der Benutzer durch mining generiert und einige andere Faktoren, die in den späteren Phasen des Nimipet-Spiels integriert werden.",
+  "q_6_title": "Kann ich mit mehr CPU Threads minen?",
+  "q_6": "Standardmäßig mined Nimipet mit 2 Threads. Es ist möglich, diese Zahl zu ändern, um mehr Hash-Leistung zu erhalten. Die Anzahl der Threads kann mit dem Schieberegler unter der Mining-Schaltfläche eingestellt werden. <br> <br>HAFTUNGSAUSSCHLUSS: Wir geben keine Empfehlungen darüber, wie viele Threads man einstellen sollte und wir haften nicht für Schäden an Ihnen oder Ihrer Hardware, die direkt oder indirekt durch das Mining auf Nimipet verursacht wurden.<br> <br>Bisher haben wir noch nichts von Schäden durch Browser-Mining auf Nimipet oder Nimiq.com gehört, aber wenn Benutzer ihre Geräte für eine lange und ununterbrochene Zeit auf einer großen Anzahl von Threads minen lassen, glauben wir, dass ein gewisses Risiko besteht.<br>  <br>Dieses Risiko bezieht sich nicht ausschließlich auf mining von Nimipet oder Nimiq, sondern ist ein allgemeines Risiko im Zusammenhang mit dem mining von Kryptowährungen.",
+  "q_7_title": "In welcher Version befindet sich das Nimipet-Projekt?",
+  "q_7": "0.3.0 Beta Version. Mehr Informationen in unserem <a href='https://medium.com/@Nimipet/' target='_blank'>Blog</a>.",
+  "q_8_title": "Wohin gehen die NIMs von toten Nimipets?",
+  "q_8": "50% aller NIMs von gestorbenen Nimipets gehen bei wöchentlichen Airdrops an die Community zurück und der Rest geht an die Nimipet Gründer und wird für Entwicklungs-, Wohltätigkeits- oder andere Zwecke verwendet.",
+  "q_9_title": "Ich liebe Nimipet. Wie kann ich das Projekt unterstützen?",
+  "q_9": "Wir suchen talentierte Leute, die dem Nimipet-Team beitreten und dabei helfen, Nimipet zum nächsten CryptoKitties zu machen. Kontaktieren Sie uns per E-Mail: ",
+
+  "box_1": "Vergangene Zeit seit dem letzten Füttern",
+  "box_2": "Nimipet Punkte",
+  "box_2_bottom": "Gefüttertes Essen + (NIMs mined * 2)",
+  "box_3": "Nimipet Wert in NIMs",
+  "box_3_bottom": "Update Intervall: 1 Stunde",
+  "box_4": "Ranglisten-Position",
+
+  "inv_title": "Information",
+  "inv_text": "<br>Sie können Ihr Nimipet füttern, indem Sie unter dem Futter-Item auf \"use\" klicken. Jeder Klick füttert dein Nimipet mit einem Futter-Item.<br> <br>Alle Benutzer erhalten 1 Wiederbelebungs-Item, wenn das Nimipet älter als 30 Tage ist.<br> <br>Das Wiederbelebungs-Item kann das tote Nimipet wiederbeleben, jedoch nur bis zum bevorstehenden Airdrop. Nach dem Airdrop wird der NIM-Wert des toten Nimipets neu verteilt und es ist nicht mehr möglich, das tote Nimipet wiederzubeleben und seinen Wert wiederherzustellen.<br> <br>Benutzer können alle Inventargegenstände auf dem Marktplatz kaufen und verkaufen. Weitere Artikel werden in Kürze verfügbar sein.<br>",
+
+  "more_nim_title": "Mehr NIM bekommen",
+  "more_nim_text": "<br>Teilen Sie diesen link mit anderen Personen, damit sie dabei helfen können NIM für Ihr Nimipet zu minen, oder minen Sie mit mehreren Geräten.<br>",
+  "sleep": "Einschläfern"
+}
