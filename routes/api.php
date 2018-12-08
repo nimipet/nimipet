@@ -913,3 +913,9 @@ Route::post('/resurrection', function () {
 		return "resurrected";
     }
 });
+
+
+Route::get('/get-airdrop', function () {
+    $airdrop = DB::table('airdrop')->select('amount', 'html', 'timestamp')->orderBy('timestamp', 'desc')->first();
+    echo json_encode($airdrop, JSON_UNESCAPED_SLASHES);
+});
