@@ -41,7 +41,7 @@ Route::get('/get-nimipet', function () {
     $nimipet[0]->current_time = date("Y-m-d H:i:s");
 
     //
-    // Execute nimipet death SAME SAME SAME as below
+    // Execute nimipet death (SAME as below)
     //
     if ($nimipet[0]->nimi_lastfed != null) {
         $hibernation = json_decode($nimipet[0]->nimi_meta);
@@ -104,7 +104,7 @@ Route::post('/get-nimi-pub', function (Request $request) {
     $user_id = $nimipet[0]->user_id;
 
     //
-    // Execute nimipet death SAME SAME SAME as above
+    // Execute nimipet death (SAME as above)
     //
     if ($nimipet[0]->nimi_lastfed != null) {
         $hibernation = json_decode($nimipet[0]->nimi_meta);
@@ -159,8 +159,6 @@ Route::post('/get-nimi-pub', function (Request $request) {
     ];
 
     echo json_encode($response, JSON_UNESCAPED_SLASHES);
-
-    // return $nimipet;
 });
 
 
@@ -184,6 +182,18 @@ Route::post('/nimi-birth', function () {
     ->where('user_id', $user_id)
     ->update([
         'user_id' => $user_id * -1
+    ]);
+
+    DB::table('items')
+    ->where('user_id', $user_id)
+    ->update([
+        'user_id' => $user_id * -1
+    ]);
+
+    DB::table('deadlist')
+    ->where('user_id', $user_id)
+    ->update([
+        'b' => 1
     ]);
 
     // create new pet
@@ -210,7 +220,7 @@ Route::post('/nimi-birth', function () {
 });
 
 
-Route::post('/nimi-price/', function (Request $request) {
+Route::post('/nimi-price', function (Request $request) {
     $user_id = JWTAuth::parseToken()->authenticate()->id;
     $price = $request->price;
 
@@ -227,7 +237,7 @@ Route::post('/nimi-price/', function (Request $request) {
 });
 
 
-Route::post('/nimi-msg/', function (Request $request) {
+Route::post('/nimi-msg', function (Request $request) {
     $user_id = JWTAuth::parseToken()->authenticate()->id;
     $msg = $request->nimi_msg;
 
@@ -279,7 +289,7 @@ Route::get('/get-leaderboard', function () {
 });
 
 
-Route::post('/food-basic/', function (Request $request) {
+Route::post('/food-basic', function (Request $request) {
     $user_id = JWTAuth::parseToken()->authenticate()->id;
     $updated = false;
 
@@ -381,7 +391,7 @@ Route::post('/food-basic/', function (Request $request) {
 });
 
 
-Route::post('/food-special/', function (Request $request) {
+Route::post('/food-special', function (Request $request) {
     $user_id = JWTAuth::parseToken()->authenticate()->id;
 
     $item_details = DB::table('items')->select('available', 'used')->where('user_id', '=', $user_id)->where('item', '=', $request->item)->first();
@@ -479,7 +489,7 @@ Route::post('/food-special/', function (Request $request) {
 });
 
 
-Route::post('/magic/', function (Request $request) {
+Route::post('/magic', function (Request $request) {
     $user_id = JWTAuth::parseToken()->authenticate()->id;
 
     $item_details = DB::table('items')->select('available', 'used', 'received')->where('user_id', '=', $user_id)->where('item', '=', $request->item)->first();
@@ -551,7 +561,7 @@ Route::post('/magic/', function (Request $request) {
 });
 
 
-Route::post('/nimi-name/', function (Request $request) {
+Route::post('/nimi-name', function (Request $request) {
     $user_id = JWTAuth::parseToken()->authenticate()->id;
     $name = $request->name;
 
@@ -576,7 +586,7 @@ Route::post('/nimi-name/', function (Request $request) {
 
     $slug = slugify($name);
 
-    $slug_db = DB::table('nimipets')->select('nimi_slug')->where('nimi_slug', '=', $slug)->first();
+    $slug_db = DB::table('nimipets')->select('nimi_slug')->where('user_id', '>', 0)->where('nimi_slug', '=', $slug)->first();
 
     if (!$slug_db) {
 
@@ -595,7 +605,7 @@ Route::post('/nimi-name/', function (Request $request) {
 });
 
 
-Route::post('/nimi-style/', function (Request $request) {
+Route::post('/nimi-style', function (Request $request) {
     $user_id = JWTAuth::parseToken()->authenticate()->id;
     $style = json_encode($request->style);
 
@@ -617,7 +627,7 @@ Route::post('/nimi-style/', function (Request $request) {
 
 // FOOD
 
-Route::post('/update-food-started/', function (Request $request) {
+Route::post('/update-food-started', function (Request $request) {
     $nimi_id = $request->nimi_id;
 
     $food_started_db = DB::table('nimipets')->select('food_started')->where('id', '=', $nimi_id)->first();
@@ -634,7 +644,7 @@ Route::post('/update-food-started/', function (Request $request) {
 });
 
 
-Route::post('/update-food-progress/', function (Request $request) {
+Route::post('/update-food-progress', function (Request $request) {
     $nimi_id = $request->nimi_id;
     $mining_time = $request->mining_time;
 
@@ -647,7 +657,7 @@ Route::post('/update-food-progress/', function (Request $request) {
 });
 
 
-Route::post('/update-food-pieces/', function (Request $request) {
+Route::post('/update-food-pieces', function (Request $request) {
     $user_id = JWTAuth::parseToken()->authenticate()->id;
     $nimi_id = $request->nimi_id;
     
@@ -664,14 +674,12 @@ Route::post('/update-food-pieces/', function (Request $request) {
 	$time_diff = date($unix_time);
 
 	if ($time_diff > 830) {
-        // generate new piece of food
-        //
-        // // food chances
-        // $food_peyote = 0.01;
-        // $food_durian - 0.02;
-        // $food_pepper - 0.04;
-        // $food_water - 0.20;
-        // $food_burger - 0.73;
+        // probabilities
+        // peyote - 0.01
+        // durian - 0.02
+        // pepper - 0.04
+        // water - 0.20
+        // burger - 0.73
 
         $foodArray = array('peyote' => '1', 'durian' => '2', 'pepper' => '4', 'water' => '20', 'burger' => '73' );
 
@@ -686,8 +694,6 @@ Route::post('/update-food-pieces/', function (Request $request) {
         $randomFoodFromDB = DB::table('items')->select('received', 'available')->where('item', '=', $randomFood)->where('nimi_id', '=', $nimi_id)->first();
         $received_new = $randomFoodFromDB->received + 1;
         $available_new = $randomFoodFromDB->available + 1;
-
-        // echo($randomFood . " " . $received_new . " " . $available_new);
 
         // update db items with received and available food
         DB::table('items')->where('nimi_id', '=', $nimi_id)->where('item', '=', $randomFood)->update([ 'received' => $received_new, 'available' => $available_new ]);
@@ -711,7 +717,6 @@ Route::post('/update-food-pieces/', function (Request $request) {
                 $food_pieces_available = $food_pieces->available + 1;
                 
                 DB::table('items')->where('user_id', '=', $referred_by_user_id)->where('item', '=', $randomFood)->update([ 'received' => $food_pieces_received, 'available' => $food_pieces_available ]);
-                // echo ("EEEEE: ". $referred_by_user_id . "  " . $food_pieces_received . "  " . $food_pieces_available . "  " . $randomFood);
             }
         }
 		
@@ -775,8 +780,8 @@ Route::post('/referral-id', function (Request $request) {
     $referral_id = $referral_id->referral_id;
 
     echo($referral_id);
-
 });
+
 
 Route::post('/nimiq-address', function (Request $request) {
     $user_id = JWTAuth::parseToken()->authenticate()->id;
@@ -841,12 +846,11 @@ Route::post('/withdrawal', function () {
 Route::post('/resurrection', function () {
     $user_id = JWTAuth::parseToken()->authenticate()->id;
 
-    $items = DB::table('deadlist')->where('user_id', '=', $user_id)->first();
+    $items = DB::table('deadlist')->where('user_id', '=', $user_id)->where('a', '!=', '1')->first();
 
-	if ($items->a == 1) {
+	if (!$items) {
 		return "too_late";
 	}
-
     else {
 		$nimi_points = $items->food_eaten + $items->nimi_value * 2;
         
