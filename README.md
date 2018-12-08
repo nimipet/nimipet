@@ -17,13 +17,11 @@ To launch Nimipet on your Apache + MySQL web server:
 - Feel free to submit bug fixes. After the review, fixes will be merged with the master and deployed to the live version.
 - For new ideas and functionalities, before the actual development, please propose the new idea in Telegram or here in issues.
 <br>
-<br>
 
 **To do:**
 - Ethereum smart contract (ERC-721 non-fungible token) based Nimipet marketplace.
 - Integrate MetaMask accounts for investors (based on https://github.com/giekaton/php-metamask-user-login).
 - Create different UIs for investors to interact with NIMI tokens. Query blockchain with Infura.
-<br>
 <br>
 
 **Challenges:**
