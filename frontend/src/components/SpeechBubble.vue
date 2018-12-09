@@ -8,7 +8,7 @@
         <div class="speech-big-name">{{ $store.state.nimi.nimi_msg }}</div>
       </div>
     </div>
-    <div v-else-if="mod != 'pub'">
+    <div v-else-if="mod != 'pub' && $store.state.nimi.nimi_msg != null">
       <div class="bubble" v-if="this.$store.state.speech == 'avatar'" @click="bubbleClickStore">
         My new style is saved 😊 <br><br>You can generate my image to use it as an avatar for social networks.
       </div>

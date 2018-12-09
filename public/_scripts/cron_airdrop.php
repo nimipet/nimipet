@@ -1,24 +1,26 @@
 <?php
 
-require_once '_setup.php';
-
-//
-// NOT READY YET
-//
+require_once 'config.php';
 
 
 // Nim value
-$nim_value = $wpdb->get_results ("SELECT nim_value FROM deadlist WHERE a = 0");
+$dbresult = "SELECT nimi_value FROM deadlist WHERE a = 0 AND b = 0";
+$dbresult = $conn->query($dbresult);
+
+$nim_value = array();
+while ($row = $dbresult->fetch_assoc()) {
+    $nim_value[] = $row;
+}
 
 $nim_value_calc = 0;
 
 foreach ($nim_value as $row) {
-    $nim_value_calc += $row->nim_value;
+    $nim_value_calc += $row["nimi_value"];
 }
 
 echo($nim_value_calc);
 
-
+exit;
 
 
 $total_divided = ($nim_value_calc) / 2;
