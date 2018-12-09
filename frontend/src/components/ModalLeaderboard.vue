@@ -10,14 +10,14 @@
           <div class="infobox-top1" v-for="(nimi, index) in leaderboard" v-if="index == 0 && loaded">
             <nimipet-character :nimi="nimi" :index="index" :currentTime="currentTime" :height="'180px'" />
             <br>
-            <div style="font-size: 16px;margin-top:5px;margin-bottom:3px;"><b>{{index+1}}. <router-link v-bind:to="nimi.nimi_slug" class='leadhref' target="_blank">{{nimi.nimi_name}}</router-link></b></div>NIM value: {{Math.floor(nimi.nimi_value)}}
+            <div style="font-size: 16px;margin-top:5px;margin-bottom:3px;"><b>{{index+1}}. <router-link v-bind:to="nimi.nimi_slug" class='a' target="_blank">{{nimi.nimi_name}}</router-link></b></div>NIM value: {{Math.floor(nimi.nimi_value)}}
             <br>Points: {{Math.floor(nimi.nimi_points)}}
           </div>
           <!-- top 2-10 -->
           <div class="infobox-leaders" v-for="(nimi, index) in leaderboard" v-if="index <=9 && index >=1 && loaded">
             <nimipet-character :nimi="nimi" :index="index" :currentTime="currentTime" :height="'140px'" />
             <br>
-            <div style="font-size: 14px;margin-top:5px;margin-bottom:3px;"><b>{{index+1}}. <router-link v-bind:to="nimi.nimi_slug" class='leadhref' target="_blank">{{nimi.nimi_name}}</router-link></b></div>NIM value: {{Math.floor(nimi.nimi_value)}}
+            <div style="font-size: 14px;margin-top:5px;margin-bottom:3px;"><b>{{index+1}}. <router-link v-bind:to="nimi.nimi_slug" class='a' target="_blank">{{nimi.nimi_name}}</router-link></b></div>NIM value: {{Math.floor(nimi.nimi_value)}}
             <br>Points: {{Math.floor(nimi.nimi_points)}}
           </div>
           <!-- top 11-100 -->
@@ -31,7 +31,7 @@
               </tr>
               <tr v-for="(nimi, index) in leaderboard" v-if="index >=10 && index <= 99 && loaded">
                 <td>{{index +1}}</td>
-                <td><router-link v-bind:to="nimi.nimi_slug" class="leadhref" target="_blank">{{nimi.nimi_name}}</router-link></td>
+                <td><router-link v-bind:to="nimi.nimi_slug" class="a" target="_blank">{{nimi.nimi_name}}</router-link></td>
                 <td>{{Math.floor(nimi.nimi_value)}}</td>
                 <td>{{Math.floor(nimi.nimi_points)}}</td>
               </tr>

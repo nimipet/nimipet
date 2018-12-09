@@ -124,7 +124,7 @@ export default {
           "By September 2017, 1,574 bitcoin ATMs have been installed around the world.",
           "Proof-of-work is the most popular method of securing the blockchain, there are at least 480 implementations, including SHA-256 and Argon2.",
           "In March 2018, the word 'cryptocurrency' was added to the Merriam-Webster Dictionary.",
-          "NIM is the token of the Nimiq Blockchain. Nimiq is a browser-based blockchain designed for simplicity and ease of use.",
+          "NIM is the coin of the Nimiq Blockchain. Nimiq is a browser-based blockchain designed for simplicity and ease of use.",
           "Nimiq mainnet went live on April 14. The first pre-mined 720 blocks were 'burned' to protect against rebranching and forking.",
           "Nimiq is an Inuit word for an object or force that binds things together.",
           "Nimiq will have a total supply or 21 billion tokens divisible by smallest units called satoshi, identical to Bitcoin.",

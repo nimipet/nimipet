@@ -3,7 +3,7 @@
 
     <div>
       <span v-if="!this.$store.state.nimi.nimi_state">
-          Loading...
+        Loading...
       </span>
       <span v-if="this.$store.state.nimi.nimi_mood == 'unborn'">
         Tip: Click on the egg to start the game
@@ -22,6 +22,9 @@
       </span>
       <span v-else-if="(this.$store.state.nimi.nimi_state == 'alive') && (this.$store.state.nimi.food_pieces > 0)">
         Tip: Drag and drop a piece of food on your nimipet to feed it
+      </span>
+      <span v-else-if="this.$store.state.nimi.last_fed == null">
+        Tip: Start mining to produce food for your nimipet
       </span>
     </div>
 

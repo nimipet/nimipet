@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "747bd3693102f22d91e4b5ef8521b5fb",
-    "url": "/img/404.gif"
+    "revision": "e03e0bd9787f414cac2a20c3c18f403f",
+    "url": "/img/icon-mp.png"
   },
   {
     "revision": "de2dc431fb690b4372f503dbbffeb04c",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/lib/toastr.min.js"
   },
   {
-    "revision": "d2278f923af589d7632e1cee1378738d",
-    "url": "/lib/saveSvgAsPng.js"
+    "revision": "c51b31eeb6b1c8a53e64efb0fe73326e",
+    "url": "/lib/toastr.min.css"
   },
   {
     "revision": "6b9bf8b95467e5361cb98b13d08f9319",
@@ -28,12 +28,12 @@ self.__precacheManifest = [
     "url": "/lib/miner/worker.js"
   },
   {
-    "revision": "c51b31eeb6b1c8a53e64efb0fe73326e",
-    "url": "/lib/toastr.min.css"
-  },
-  {
     "revision": "a0eb27e24297bb4765f6ec0fb98d2a41",
     "url": "/lib/miner/worker-wasm.js"
+  },
+  {
+    "revision": "d2278f923af589d7632e1cee1378738d",
+    "url": "/lib/saveSvgAsPng.js"
   },
   {
     "revision": "3901478807d2c78db66e802b774be0d8",
@@ -56,24 +56,24 @@ self.__precacheManifest = [
     "url": "/lang/ru.json"
   },
   {
-    "revision": "044030aa1f15e5d62f7be6560e762b30",
-    "url": "/lib/jscolor.min.js"
-  },
-  {
     "revision": "12e8a16b01fd84ddb5984f0c260e9954",
     "url": "/lib/Utils.js"
+  },
+  {
+    "revision": "044030aa1f15e5d62f7be6560e762b30",
+    "url": "/lib/jscolor.min.js"
   },
   {
     "revision": "976638264218c52afb7fbef18421a60d",
     "url": "/lib/NimiqAddresses.js"
   },
   {
-    "revision": "7add8c9fca533f745ffa226a0a109499",
-    "url": "/lib/draggable.bundle.min.js"
-  },
-  {
     "revision": "217e9c7cebca88f6a40665854fc26e8e",
     "url": "/lib/miner/nimiq.js"
+  },
+  {
+    "revision": "7add8c9fca533f745ffa226a0a109499",
+    "url": "/lib/draggable.bundle.min.js"
   },
   {
     "revision": "24aa844f9c80a4a270f4d762802c7ec3",
@@ -84,20 +84,24 @@ self.__precacheManifest = [
     "url": "/img/magic-sunglasses.png"
   },
   {
-    "revision": "eee53b5a473ee55bf66f7425661c5995",
-    "url": "/img/00.png"
-  },
-  {
-    "revision": "16d06d5e36f7b2381128a97681e0cd69",
-    "url": "/img/faq.png"
+    "revision": "34fae7bf5484a08aec5a443243036498",
+    "url": "/fx/food-ready.mp3"
   },
   {
     "revision": "a2b8358fe2656655ae29bb2c449f4b6d",
     "url": "/img/food-burger.png"
   },
   {
-    "revision": "e08d60d145492b4b2662d0f8661cff66",
-    "url": "/img/food-durian.png"
+    "revision": "9d7ac7a633eea617bc095edf679f706b",
+    "url": "/img/cross.png"
+  },
+  {
+    "revision": "747bd3693102f22d91e4b5ef8521b5fb",
+    "url": "/img/404.gif"
+  },
+  {
+    "revision": "16d06d5e36f7b2381128a97681e0cd69",
+    "url": "/img/faq.png"
   },
   {
     "revision": "d70d64d1f574b3b9a70e178b826767ec",
@@ -108,6 +112,18 @@ self.__precacheManifest = [
     "url": "/img/food-pepper.png"
   },
   {
+    "revision": "e08d60d145492b4b2662d0f8661cff66",
+    "url": "/img/food-durian.png"
+  },
+  {
+    "revision": "5c7d424f0a3afc8b7e89e8f861f544ac",
+    "url": "/img/food-pills.png"
+  },
+  {
+    "revision": "7e3a16a26cda81af4347",
+    "url": "/js/app.96506469.js"
+  },
+  {
     "revision": "5501d8e0397104e1bd1260d1a3a385da",
     "url": "/img/food-peyote.png"
   },
@@ -116,80 +132,68 @@ self.__precacheManifest = [
     "url": "/img/food-water.png"
   },
   {
-    "revision": "d125bf87da63137fd2f4",
-    "url": "/js/app.dae329b1.js"
-  },
-  {
-    "revision": "5c7d424f0a3afc8b7e89e8f861f544ac",
-    "url": "/img/food-pills.png"
-  },
-  {
     "revision": "41c264ae2df6e67179f3c586132bdba4",
     "url": "/img/icon-divider.png"
-  },
-  {
-    "revision": "e03e0bd9787f414cac2a20c3c18f403f",
-    "url": "/img/icon-mp.png"
   },
   {
     "revision": "fc8f376738a02112cffe2e1d20ac29f7",
     "url": "/img/icon-inventory.png"
   },
   {
-    "revision": "9d7ac7a633eea617bc095edf679f706b",
-    "url": "/img/cross.png"
+    "revision": "eee53b5a473ee55bf66f7425661c5995",
+    "url": "/img/00.png"
   },
   {
     "revision": "15f5e6a91a92309f676cb98adc38c935",
     "url": "/img/item-sunglasses.png"
   },
   {
-    "revision": "1b8ea6dc6a82c346c3e60a58d3c5d0ce",
-    "url": "/img/magic-resurrection.png"
+    "revision": "c90cfd4ce716ece97bae9a2e78251cb8",
+    "url": "/img/nimipet-birth.gif"
   },
   {
     "revision": "aac7b43f7a63ec4186c5521f66ff1848",
     "url": "/img/magic-hibernation.png"
   },
   {
-    "revision": "c90cfd4ce716ece97bae9a2e78251cb8",
-    "url": "/img/nimipet-birth.gif"
+    "revision": "1b8ea6dc6a82c346c3e60a58d3c5d0ce",
+    "url": "/img/magic-resurrection.png"
   },
   {
-    "revision": "e16950dc7c7ac92ee7c2",
-    "url": "/js/chunk-vendors.2fc751e8.js"
-  },
-  {
-    "revision": "bfa6cb56152629487f780d87245ab2c8",
-    "url": "/img/nimipet-dead.gif"
-  },
-  {
-    "revision": "d5744f5f33c6c816cec6c4db73be2575",
-    "url": "/js/nimipet_nimbusminer.js"
-  },
-  {
-    "revision": "448132ab1a84bcf9d42dd9d753a53db6",
-    "url": "/img/social_share.png"
-  },
-  {
-    "revision": "db72f990e6fb59f9f6ee132fa8c346ec",
-    "url": "/js/nimipet_preload.js"
+    "revision": "7ce40d3e1c89abc09a72d1d0d73ca64b",
+    "url": "/img/airdrop.png"
   },
   {
     "revision": "347650b7e47ac0ce621cd81bbcac5c36",
     "url": "/js/nimipet_mining.js"
   },
   {
+    "revision": "bfa6cb56152629487f780d87245ab2c8",
+    "url": "/img/nimipet-dead.gif"
+  },
+  {
     "revision": "ec7697061361d123b514d70746f294b3",
     "url": "/img/trophy_og.png"
   },
   {
-    "revision": "cf53e76e68a1e11ec4c0de0d0b8c371d",
-    "url": "/img/home_nimipet.cf53e76e.png"
+    "revision": "d5744f5f33c6c816cec6c4db73be2575",
+    "url": "/js/nimipet_nimbusminer.js"
   },
   {
-    "revision": "db4ad7cc1dfd080e95e3b2cff7d43a8d",
-    "url": "/index.html"
+    "revision": "e16950dc7c7ac92ee7c2",
+    "url": "/js/chunk-vendors.2fc751e8.js"
+  },
+  {
+    "revision": "448132ab1a84bcf9d42dd9d753a53db6",
+    "url": "/img/social_share.png"
+  },
+  {
+    "revision": "5048d8c63db836a45e9303dc149c4c7d",
+    "url": "/fx/grab.mp3"
+  },
+  {
+    "revision": "db72f990e6fb59f9f6ee132fa8c346ec",
+    "url": "/js/nimipet_preload.js"
   },
   {
     "revision": "4645d5bbb7e9e21a5852f4a4dc682374",
@@ -204,20 +208,20 @@ self.__precacheManifest = [
     "url": "/lang/fr.json"
   },
   {
-    "revision": "2ef94e78b8cff06ce243c662d178c51a",
-    "url": "/lang/de.json"
-  },
-  {
     "revision": "f8e5d7734a217ef92997f566d6ecc987",
     "url": "/lang/en.json"
   },
   {
-    "revision": "5048d8c63db836a45e9303dc149c4c7d",
-    "url": "/fx/grab.mp3"
+    "revision": "2ef94e78b8cff06ce243c662d178c51a",
+    "url": "/lang/de.json"
   },
   {
-    "revision": "34fae7bf5484a08aec5a443243036498",
-    "url": "/fx/food-ready.mp3"
+    "revision": "44e1e07ebd6313dc9c053fdd457d3caa",
+    "url": "/index.html"
+  },
+  {
+    "revision": "cf53e76e68a1e11ec4c0de0d0b8c371d",
+    "url": "/img/home_nimipet.cf53e76e.png"
   },
   {
     "revision": "fca123d861995ef478e5316536004fe1",
@@ -232,7 +236,7 @@ self.__precacheManifest = [
     "url": "/fx/born.mp3"
   },
   {
-    "revision": "d125bf87da63137fd2f4",
-    "url": "/css/app.2f077985.css"
+    "revision": "7e3a16a26cda81af4347",
+    "url": "/css/app.317accc3.css"
   }
 ];

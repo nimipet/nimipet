@@ -38,7 +38,7 @@ class AuthController extends Controller
             $result = json_decode($response);
         }
 
-        if ($result->score > 0.5) {
+        if ($result->score > 0.4) {
             $user = new User;
             $user->email = $request->email;
             if (strlen($request->referred_by) > 0) {
@@ -88,7 +88,7 @@ class AuthController extends Controller
             $result = json_decode($response);
         }
 
-        if ($result->score > 0.5) {
+        if ($result->score > 0.4) {
             $credentials = $request->only('email', 'password');
             if ( ! $token = JWTAuth::attempt($credentials)) {
                 return response([

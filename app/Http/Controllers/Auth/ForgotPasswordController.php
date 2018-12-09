@@ -63,7 +63,7 @@ class ForgotPasswordController extends Controller
             $result = json_decode($response);
         }
 
-        if ($result->score < 0.5) {
+        if ($result->score < 0.4) {
             return "error-captcha";
         }
 
