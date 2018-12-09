@@ -22,7 +22,8 @@ To launch Nimipet on your Apache + MySQL web server:
 - Ethereum smart contract (ERC-721 non-fungible token) based Nimipet marketplace.
 - Integrate MetaMask accounts for investors (based on https://github.com/giekaton/php-metamask-user-login).
 - Create different UIs for investors to interact with NIMI tokens. Query blockchain with Infura.
-
+- Do instant login after registration.
+<br>
 - Fix miner bugs that appear occasionally (front-end code in `LeftMiner.vue`, back-end in `api.php`):
 1. To start mining, user needs to click button twice.
 2. Mined time resets on button click.

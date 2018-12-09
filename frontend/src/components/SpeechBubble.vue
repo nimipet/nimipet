@@ -1,5 +1,6 @@
 <template>
   <div class="scaled-bubble">
+
     <div v-if="mod == 'pub' && $store.state.nimi.nimi_msg != null" class="scaled-bubble">
       <div v-if="$store.state.nimi.nimi_msg.length > 80" class="bubble scaled-mod" style="top:130px;">
         {{ $store.state.nimi.nimi_msg }}
@@ -8,20 +9,25 @@
         <div class="speech-big-name">{{ $store.state.nimi.nimi_msg }}</div>
       </div>
     </div>
-    <div v-else-if="mod != 'pub' && $store.state.nimi.nimi_msg != null">
-      <div class="bubble" v-if="this.$store.state.speech == 'avatar'" @click="bubbleClickStore">
-        My new style is saved 😊 <br><br>You can generate my image to use it as an avatar for social networks.
-      </div>
-      <div class="bubble" v-else-if="this.$store.state.speech == 'name-change-success'" @click="bubbleClickStore">
-        <div class="speech-big-name">Success! My new name is<br> <b>{{ this.$store.state.nimi.nimi_name }}</b></div>
-      </div>
-      <div class="bubble" v-else-if="this.$store.state.speech == 'name-change-error'" @click="bubbleClickStore">
-        <span class='error'>
-          ERROR: This name is already in use by another nimipet. Please pick a different one.
-        </span>
-      </div>
-      <div class="bubble" v-else-if="speech != ''" v-html="speech" @click="bubbleClick"></div>
+    
+    <div class="bubble" v-if="this.$store.state.speech == 'avatar'" @click="bubbleClickStore">
+      My new style is saved 😊 <br><br>You can generate my image to use it as an avatar for social networks.
     </div>
+
+    <div class="bubble" v-else-if="this.$store.state.speech == 'name-change-success'" @click="bubbleClickStore">
+      <div class="speech-big-name">Success! My new name is<br> <b>{{ this.$store.state.nimi.nimi_name }}</b></div>
+    </div>
+
+    <div class="bubble" v-else-if="this.$store.state.speech == 'name-change-error'" @click="bubbleClickStore">
+      <span class='error'>
+        ERROR: This name is already in use by another nimipet. Please pick a different one.
+      </span>
+    </div>
+
+    <div v-else-if="mod != 'pub' && $store.state.nimi.nimi_msg != null && $store.state.nimi.nimi_lastfed != null">
+      <div class="bubble" v-if="speech != ''" v-html="speech" @click="bubbleClick"></div>
+    </div>
+
   </div>
 </template>
 
