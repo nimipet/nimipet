@@ -7,38 +7,48 @@ require_once 'config.php';
 $dbresult = "SELECT nimi_value FROM deadlist WHERE a = 0 AND b = 0";
 $dbresult = $conn->query($dbresult);
 
-$nim_value = array();
+$nimi_value = array();
 while ($row = $dbresult->fetch_assoc()) {
-    $nim_value[] = $row;
+    $nimi_value[] = $row;
 }
 
-$nim_value_calc = 0;
+$nimi_value_calc = 0;
 
-foreach ($nim_value as $row) {
-    $nim_value_calc += $row["nimi_value"];
+foreach ($nimi_value as $row) {
+    $nimi_value_calc += $row["nimi_value"];
 }
 
-echo($nim_value_calc);
+echo("TOTAL: " . $nimi_value_calc);
 
-exit;
+$total_divided = ($nimi_value_calc) / 2;
 
-
-$total_divided = ($nim_value_calc) / 2;
-
-echo("\n TOTAL/2: " . $total_divided);
-
-
+echo("\nTOTAL/2: " . $total_divided);
 echo("\n");
 
+$fund = "SELECT balance FROM wallets_admin WHERE pool = 'fund'";
+$fund = $conn->query($fund);
+$fund = $fund->fetch_assoc();
 
-$fund = $wpdb->get_var("SELECT balance FROM wallets_admin WHERE pool = 'fund'");
-// echo($fund);
-$fund = $fund + $total_divided;
+echo($fund["balance"]);
 
-$wpdb->update( 'wallets_admin', array ( 'balance' => $fund, 'timestamp' => date('Y-m-d H:i:s') ), array ( 'pool' => 'fund') );
+$fund = $fund["balance"] + $total_divided;
+
+echo ("\n".$fund);
+// exit;
 
 
-$alive_nimipets = $wpdb->get_results ("SELECT user_ID, nim_lastfed, nim_value, nim_name, nim_born FROM nimipets WHERE nim_state = 'alive'");
+// // $wpdb->update( 'wallets_admin', array ( 'balance' => $fund, 'timestamp' => date('Y-m-d H:i:s') ), array ( 'pool' => 'fund') );
+// $sql = "UPDATE wallets_admin SET balance = ".$fund.", timestamp = ".date('Y-m-d H:i:s')." WHERE pool = 'fund'";
+// $conn->query($sql);
+
+
+// $alive_nimipets = $wpdb->get_results ("SELECT user_ID, nimi_lastfed, nimi_value, nimi_name, nimi_born FROM nimipets WHERE nimi_state = 'alive'");
+$dbresult = "SELECT user_ID, nimi_lastfed, nimi_value, nimi_name, nimi_born FROM nimipets WHERE nimi_state = 'alive'";
+$dbresult = $conn->query($dbresult);
+$alive_nimipets = array();
+while ($row = $dbresult->fetch_assoc()) {
+    $alive_nimipets[] = $row;
+}
 
 // remove possible single quotes from JSON string
 $alive_nimipets = str_replace("'", "", $alive_nimipets);
@@ -63,9 +73,7 @@ foreach ($alive_nimipets as $nimipet) {
     // $now = "2018-05-29 14:10:01";
     // $dead_before = date("2018-06-08 02:45:01");
 
-
-
-    if ((date($nimipet->nim_lastfed) > $dead_before) && (date($nimipet->nim_born) < $born_before)) {
+    if ((date($nimipet["nimi_lastfed"]) > $dead_before) && (date($nimipet["nimi_born"]) < $born_before)) {
 
         $not_dead[] = $nimipet;
 
@@ -75,10 +83,9 @@ foreach ($alive_nimipets as $nimipet) {
 
 echo("\n Total: " . $i . "\n");
 
-
 function cmp($a, $b)
 {
-    return strnatcmp($a->nim_born, $b->nim_born);
+    return strnatcmp($a->nimi_born, $b->nimi_born);
 }
 usort($not_dead, "cmp");
 
@@ -107,6 +114,7 @@ $total = 0;
 foreach ($not_dead as $nimipet) {
     $total += $nimipet->number;
 }
+
 // echo($total);
 
 $single_share = $total_divided / $total;
@@ -117,41 +125,49 @@ foreach ($not_dead as $nimipet) {
     $total_amount += $nimipet->number;
 }
 
+
+
 $html = "";
 echo("Total for community: " . $total_amount . "\n");
 
 foreach ($not_dead as $nimipet) {
-    $nim_name = $nimipet->nim_name;
-    $html .= $nim_name . ": " . $nimipet->number . " NIM<br>";
+    $nimi_name = $nimipet->nimi_name;
+    $html .= $nimi_name . ": " . $nimipet->number . " NIM<br>";
 }
 
-$wpdb->insert( 
-	'airdrop', 
-	array( 
-		'amount' => $total_amount, 
-        'html' => $html,
-        'timestamp' => date('Y-m-d H:i:s')
-	)
-);
+// LARA
+echo("INSERT AIRDROP __");
+// $wpdb->insert( 
+// 	'airdrop', 
+// 	array( 
+// 		'amount' => $total_amount, 
+//         'html' => $html,
+//         'timestamp' => date('Y-m-d H:i:s')
+// 	)
+// );
 
 
 // Give all living nimipets NIMs
 foreach ($not_dead as $nimipet) {
-    echo($nimipet->nim_value);
-    $nim_value = $nimipet->nim_value + $nimipet->number;
-    echo ($nimipet->nim_name . $nim_value . "\n");
+    echo($nimipet->nimi_value);
+    $nimi_value = $nimipet->nimi_value + $nimipet->number;
+    echo ($nimipet->nimi_name . $nimi_value . "\n");
 
-    $wpdb->update( 'nimipets', array ( 'nim_value' => $nim_value ), array ('user_ID' => $nimipet->user_ID) );
+    // LARA
+    echo ("UPDATE NIMIPETS_");
+    // $wpdb->update( 'nimipets', array ( 'nimi_value' => $nimi_value ), array ('user_ID' => $nimipet->user_ID) );
 }
 
-// Drop values from dead nimipets
-$wpdb->query( 
-    "
-    UPDATE deadlist 
-    SET a = '1'
 
-    "
-);
+// Drop values from dead nimipets
+echo "LAST";
+// $wpdb->query( 
+//     "
+//     UPDATE deadlist 
+//     SET a = '1'
+
+//     "
+// );
 
 
 ?>

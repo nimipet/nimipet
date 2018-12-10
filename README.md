@@ -6,11 +6,23 @@ Medium article related to this release: link
 
 To launch Nimipet on your Apache + MySQL web server:
 
-1.
-2.
-3.
-4.
-5.
+``` sh
+cd frontend
+yarn # OR npm install
+yarn serve # OR npm run serve
+
+# build for production:
+yarn build # OR npm run build
+```
+
+The default config assumes you are serving this Laravel app via `http://nimipet.local/` URL. If you are serving the laravel app at a different local URL, modify it accordingly in `frontend/vue.config.js`.
+
+Config authentication details in `.env` file.
+
+This Laravel + Vue app structure is based on the [laravel-vue-cli-3](https://github.com/yyx990803/laravel-vue-cli-3) project. For more details, see its docs.
+
+Front-end files are mostly in `/frontend/src/components`.
+Back-end in `/routes/api.php`, user auth in `/app/Http/Controllers`.
 
 # Contribution
 

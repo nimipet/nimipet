@@ -1,7 +1,7 @@
 <template>
   <div>
     <div style="width:250px;margin:0 auto;margin-bottom:5px;">
-      <img src="../assets/home_nimipet.png" width="200">
+      <img src="img/home_nimipet.png" width="200">
     </div>
     <div id="typed" style="color:#626262;font-size:28px;width:300px;margin:0 auto;display:inline;"></div>
     <div style="font-size:22px;margin-top:40px;margin-bottom:0px;">
