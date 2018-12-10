@@ -1,5 +1,6 @@
-![nimi-icon](https://giekaton.com/img/nimi-icon-.png)
-
+![nimi-icon](https://giekaton.com/img/nimi-icon--.png)
+<br>
+<br>
 This is the source code repository for the Nimipet game (https://nimipet.com) PWA, coded in Laravel (PHP) on the back-end, and Vue.js on the front-end.
 
 Medium article related to this release: [link](https://medium.com/@Nimipet/nimipet-code-rewrite-new-features-marketplace-ff4c820da847)
