@@ -54,7 +54,7 @@ Back-end in `/routes/api.php`, user auth in `/app/Http/Controllers`.
 - Significantly optimize the efficiency of browser mining. This particular challenge has a reward bounty up to 1 000 000 NIM from the Nimiq Foundation.
 <br>
 
-# What is Nimipet?
+# What is the Nimipet?
 
 Nimipet is the game where nimipets live.
 
@@ -68,7 +68,7 @@ After each feeding, the new 24 hours period starts. If during the 24 hours perio
 
 Each nimipet has its value in NIMs. The more food receives the nimipet, the bigger is its monetary value.
 <br>
-
+<br>
 **Screenshots**
 <br>
 <br>
