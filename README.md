@@ -52,6 +52,7 @@ Back-end in `/routes/api.php`, user auth in `/app/Http/Controllers`.
 - Significantly optimize the efficiency of browser mining. This particular challenge has a reward bounty up to **1 000 000 NIM** from the Nimiq Foundation.
 <br>
 <br>
+
 # Screenshots
 <br>
 <br>
