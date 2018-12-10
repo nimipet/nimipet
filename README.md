@@ -1,6 +1,6 @@
 This is the source code repository for the Nimipet game (https://nimipet.com) PWA, coded in Laravel (PHP) on the back-end, and Vue.js on the front-end.
 
-Medium article related to this release: link
+Medium article related to this release: [link](https://medium.com/@Nimipet/nimipet-code-rewrite-new-features-marketplace-ff4c820da847)
 <br>
 <br>
 # Quickstart
@@ -20,7 +20,9 @@ yarn build # OR npm run build
 
 The default config assumes you are serving this Laravel app via `http://nimipet.local/` URL. If you are serving the laravel app at a different local URL, modify it accordingly in `frontend/vue.config.js`.
 
-Config authentication details in `.env` file.
+Rename `.env.example` to `.env` and provide your authentication details.
+
+To create database tables, execute migrate Artisan command: `php artisan migrate`
 
 This Laravel + Vue app structure is based on the [laravel-vue-cli-3](https://github.com/yyx990803/laravel-vue-cli-3) project. For more details, see its docs.
 
