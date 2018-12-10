@@ -66,4 +66,4 @@ Back-end in `/routes/api.php`, user auth in `/app/Http/Controllers`.
 <br>
 <br>
 
-### Play the game on **https://nimipet.com** ###
+### Play the game at **https://nimipet.com** ###
