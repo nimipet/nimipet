@@ -6,9 +6,11 @@ Medium article related to this release: link
 
 To launch Nimipet on your Apache + MySQL web server:
 
-``` sh
+```
 cd frontend
 yarn # OR npm install
+
+# local development server:
 yarn serve # OR npm run serve
 
 # build for production:
@@ -23,7 +25,7 @@ This Laravel + Vue app structure is based on the [laravel-vue-cli-3](https://git
 
 Front-end files are mostly in `/frontend/src/components`.
 Back-end in `/routes/api.php`, user auth in `/app/Http/Controllers`.
-
+<br>
 # Contribution
 
 - Feel free to submit bug fixes. After the review, fixes will be merged with the master and deployed to the live version.
