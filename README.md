@@ -1,3 +1,5 @@
+![nimi-icon](https://giekaton.com/img/nimi-icon.png)
+
 This is the source code repository for the Nimipet game (https://nimipet.com) PWA, coded in Laravel (PHP) on the back-end, and Vue.js on the front-end.
 
 Medium article related to this release: [link](https://medium.com/@Nimipet/nimipet-code-rewrite-new-features-marketplace-ff4c820da847)
@@ -72,15 +74,15 @@ Each nimipet has its value in NIMs. The more food receives the nimipet, the bigg
 **Screenshots**
 <br>
 <br>
-![shot-01](https://giekaton.com/img/screen-01.png)
+![nimi-01](https://giekaton.com/img/nimi-01.png)
 <br>
-![shot-02](https://giekaton.com/img/screen-02.png)
+![nimi-02](https://giekaton.com/img/nimi-02.png)
 <br>
-![shot-05](https://giekaton.com/img/screen-05.png)
+![nimi-03](https://giekaton.com/img/nimi-03.png)
 <br>
-![shot-03](https://giekaton.com/img/screen-03.png)
+![nimi-04](https://giekaton.com/img/nimi-04.png)
 <br>
-![shot-04](https://giekaton.com/img/screen-04.png)
+![nimi-05](https://giekaton.com/img/nimi-05.png)
 
 <br>
 <br>
