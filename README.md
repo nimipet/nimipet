@@ -30,8 +30,9 @@ Back-end in `/routes/api.php`, user auth in `/app/Http/Controllers`.
 <br>
 # Contribution
 
+**General:**
 - Feel free to submit bug fixes. After the review, fixes will be merged with the master and deployed to the live version.
-- For new ideas and functionalities, before the actual development, please propose the new idea in Telegram or here in issues.
+- For new ideas and functionalities, please before the actual development, propose the new idea in Telegram or here in issues.
 <br>
 
 **To do:**
