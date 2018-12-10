@@ -50,14 +50,20 @@ Back-end in `/routes/api.php`, user auth in `/app/Http/Controllers`.
 <br>
 
 **Challenges:**
-- Optimize browser miner to automatically connect to different pools, and distrubute payouts according to the total amount of time mined, and not only the 'window' when the new block was found.
+- Optimize browser miner to automatically connect to different pools, and distribute payouts according to the total amount of time mined, and not only the 'window' when the new block was found.
 - Significantly optimize the efficiency of browser mining. This particular challenge has a reward bounty up to 1 000 000 NIM from the Nimiq Foundation.
 <br>
 
 # Screenshots
+![shot-01](https://giekaton.com/img/screen-01.png)
+
+![shot-02](https://giekaton.com/img/screen-02.png)
+
+![shot-03](https://giekaton.com/img/screen-03.png)
+
+![shot-04](https://giekaton.com/img/screen-04.png)
+
 <br>
 <br>
 
-
-
-Play the game on **https://nimipet.com**
+### Play the game on **https://nimipet.com** ###
