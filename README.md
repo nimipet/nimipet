@@ -54,13 +54,32 @@ Back-end in `/routes/api.php`, user auth in `/app/Http/Controllers`.
 - Significantly optimize the efficiency of browser mining. This particular challenge has a reward bounty up to 1 000 000 NIM from the Nimiq Foundation.
 <br>
 
-# Screenshots
+# What is Nimipet?
+
+Nimipet is the game where nimipets live.
+
+A nimipet is a digital pet that needs to be fed by virtual pieces of food the player creates by browser-mining Nimiq cryptocurrency.
+
+Nimipet needs to eat at least one piece of food per 24 hours, or it will die and all user points and NIMs will be lost.
+
+To receive one piece of food, the player needs to browser-mine for 15 minutes of time. The maximum amount of food nimipet can eat per day is 200 pieces.
+
+After each feeding, the new 24 hours period starts. If during the 24 hours period nimipet does not receive a new piece of food, it dies.
+
+Each nimipet has its value in NIMs. The more food receives the nimipet, the bigger is its monetary value.
+<br>
+
+**Screenshots**
+<br>
+<br>
 ![shot-01](https://giekaton.com/img/screen-01.png)
-
+<br>
 ![shot-02](https://giekaton.com/img/screen-02.png)
-
+<br>
+![shot-05](https://giekaton.com/img/screen-05.png)
+<br>
 ![shot-03](https://giekaton.com/img/screen-03.png)
-
+<br>
 ![shot-04](https://giekaton.com/img/screen-04.png)
 
 <br>
